@@ -52,10 +52,13 @@ function draw() {
   packageSprite.x= packageBody.position.x 
   packageSprite.y= packageBody.position.y 
 
-  if (keyCode === DOWN_ARROW) {
+  KEYPRESSED();	
+  drawSprites();
+}
+function KEYPRESSED () {
+if (KeyCode === DOWN_ARROW) {
     matter.body.setStatic(packageBody, false);
   }
-  drawSprites();
 }
 
 
